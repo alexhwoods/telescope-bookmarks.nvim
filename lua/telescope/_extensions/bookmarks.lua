@@ -53,7 +53,7 @@ local function bookmarks(opts)
     "telescope._extensions.bookmarks." .. selected_browser
   )
 
-  print(string.format("Selected browser: %s", selected_browser))
+  error(string.format("Selected browser: %s", selected_browser))
   local results = browser.collect_bookmarks(state)
   if not results then
     return
