@@ -96,7 +96,7 @@ end
 
 return telescope.register_extension {
   setup = function(ext_config)
-    set_config_state("selected_browser", ext_config.selected_browser, "brave")
+    set_config_state("selected_browser", ext_config.selected_browser, "google_chrome")
     set_config_state("url_open_command", ext_config.url_open_command, "open")
     set_config_state("url_open_plugin", ext_config.url_open_plugin, nil)
     set_config_state(
