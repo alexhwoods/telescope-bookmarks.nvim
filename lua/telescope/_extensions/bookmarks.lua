@@ -52,6 +52,8 @@ local function bookmarks(opts)
   local browser = require(
     "telescope._extensions.bookmarks." .. selected_browser
   )
+
+  print(string.format("Selected browser: %s", selected_browser))
   local results = browser.collect_bookmarks(state)
   if not results then
     return
