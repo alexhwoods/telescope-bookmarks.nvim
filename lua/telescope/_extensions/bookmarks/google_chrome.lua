@@ -103,6 +103,7 @@ function google_chrome.collect_bookmarks(state)
 
   if not file then
     utils.warn("No Google Chrome bookmarks file found at: " .. filepath)
+    utils.warn(string.format("Selected browser: %s", selected_browser))
     return nil
   end
 
